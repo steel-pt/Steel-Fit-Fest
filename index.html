@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit Fest Wheel</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="column wheel-column">
+        <img src="logo.png" alt="">
+        <div class="wheel-container">
+            <canvas id="wheelCanvas" width="500" height="500"></canvas>
+        </div>
+        <button id="spinButton">Spin the Wheel</button>
+    </div>
+    <div class="column result-column">
+        <h3 id="currentTeam">Team A</h3>
+        <div id="teamAResult"></div>
+        <div id="teamBResult"></div>
+    </div>
+
+    <!-- Modal for showing result name -->
+    <div id="resultModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modalResult"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
